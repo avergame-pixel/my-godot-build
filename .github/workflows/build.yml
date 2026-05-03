@@ -1,0 +1,21 @@
+      - name: Compilation
+        run: |
+          scons platform=web target=template_release precision=single \
+          disable_3d=no \
+          disable_advanced_gui=yes \
+          module_physics_2d_enabled=no \
+          module_physics_3d_enabled=yes \
+          module_navigation_enabled=no \
+          module_mobile_vr_enabled=no \
+          module_openxr_enabled=no \
+          module_camera_enabled=no \
+          module_msdfgen_enabled=no \
+          module_text_server_adv_enabled=no \
+          module_text_server_fb_enabled=yes \
+          module_upnp_enabled=no \
+          module_enet_enabled=no \
+          module_dds_enabled=no \
+          module_tga_enabled=no \
+          module_webxr_enabled=no \
+          optimize=size \
+          -j$(nproc)
