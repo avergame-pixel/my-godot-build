@@ -13,7 +13,7 @@ jobs:
       - name: Setup Emscripten
         uses: mymindstorm/setup-emsdk@v14
         with:
-          version: 3.1.45
+          version: latest # GitHub сам скачает самую новую версию (4.0.0+)
 
       - name: Setup Python & SCons
         uses: actions/setup-python@v5
